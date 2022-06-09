@@ -68,14 +68,14 @@ font-size:50px;
 </head>
 
 <body>
-    <ul class="nav">
+    <ul class="nav" id="nav">
         <li><a href="https://hgd7764.freeflarum.com/">服务器论坛</a></li>
         <li><a href="#anchor1">服务器特色</a></li>
         <li><a href="#anchor2">客户端下载</a></li>
         <li><a href="#anchor3">风景一览</a></li>
         <li><a href="#anchor4">加入我们</a></li>
     </ul>
-    <div class="navbor">   
+    <div class="navbor" id="navbor">   
         <a href="" class="navtit">CHANGE服务器</a>
     </div>
     <!-- 首页标题 -->
@@ -180,8 +180,8 @@ font-size:50px;
     <script type="text/javascript" src="https://change.al16.cf/static/js/viewer.min.js" ></script>
     <script type="text/javascript">
        if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) { 
-           nav.style.display="none";
-	   navbor.style.display="none";
+           document.getElementById("nav").style.display="none";
+	   document.getElementById("navbor").style.display="none"
        }
     </script>
 </body>
